@@ -20,7 +20,7 @@ function App() {
         <button className="bg-blue-700 text-white rounded-[30px] p-[30px] text-[1.5em] shadow-[3px_3px_10px_3px_rgba(255,255,255,0.5)] active:shadow-none border-black border-[2px]" onClick={()=> setShow(true)}>Click Me</button>
         {confirm ? <h1 className="text-[2em] text-white mt-[10px]">Yes</h1> : <h1 className="text-[2em] text-white mt-[10px]">No</h1>}
         <h1 className={(input!='') ? "text-[2em] text-white mt-[10px]": "hidden"}>{input}</h1>
-        {show ? <Dialog message={msg.value} type={type.value} myVar = {setConfirm} setInput={setInput}/>: ''}
+        {show ? <Dialog message={msg.value} type={type.value.toLowerCase().trim()} myVar = {setConfirm} setInput={setInput}/>: ''}
     </div>
   )
 }
