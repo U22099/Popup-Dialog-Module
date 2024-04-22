@@ -21,7 +21,7 @@ function ConfirmDialog(props: any) {
             duration: 0.5,
         }
     }}
-    className="flex flex-col bg-white rounded-xl p-[20px] dialog md:w-[40vw] w-[80vw] justify-center items-center gap-[10px]">
+    className="flex flex-col bg-white rounded-xl p-[20px] dialog md:w-[40vw] w-[90vw] justify-center items-center gap-[10px]">
         <div className="w-[100%] flex justify-center items-center">
             <GiConfirmed className="text-green-600 text-bold text-[5em]"/>
         </div>
@@ -30,8 +30,8 @@ function ConfirmDialog(props: any) {
             <p>{props.msg}</p>
         </div>
         <div className="flex w-[100%] mx-auto gap-[10px]">
-        <button className="w-[50%] bg-green-600 rounded-md text-[2em] shadow-[2px_2px_5px_3px_rgba(0,0,0,0.5)]" onClick={()=> ans("accept")}>Accept</button>
-        <button className="w-[50%] bg-red-600 rounded-md text-[2em] shadow-[2px_2px_5px_3px_rgba(0,0,0,0.5)]" onClick={()=> ans("decline")}>Decline</button>
+        <button className="w-[50%] bg-green-600 rounded-md text-[1.4em] md:text-[2em] shadow-[2px_2px_5px_3px_rgba(0,0,0,0.5)]" onClick={()=> ans("accept")}>Accept</button>
+        <button className="w-[50%] bg-red-600 rounded-md text-[1.4em] md:text-[2em] shadow-[2px_2px_5px_3px_rgba(0,0,0,0.5)]" onClick={()=> ans("decline")}>Decline</button>
         </div>
 
     </motion.div>

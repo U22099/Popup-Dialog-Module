@@ -16,7 +16,7 @@ function InfoDialog(props: any) {
             duration: 0.5,
         }
     }}
-     className="flex flex-col bg-white rounded-xl p-[20px] dialog md:w-[40vw] w-[80vw] justify-center items-center gap-[10px]">
+     className="flex flex-col bg-white rounded-xl p-[20px] dialog md:w-[40vw] w-[90vw] justify-center items-center gap-[10px]">
         <div className="w-[100%] flex justify-center items-center">
             <FaInfoCircle className="text-blue-600 text-bold text-[5em]"/>
         </div>
